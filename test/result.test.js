@@ -24,6 +24,11 @@ describe('Result', function() {
       var result = new Result(doc, options);
       expect(result.options).to.eql(options);
     });
+
+    it('set empty `options` if not presented', function () {
+      var result = new Result(doc);
+      expect(result.options).to.eql({});
+    });
   });
 
   it('#toString()', function() {
