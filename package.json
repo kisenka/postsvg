@@ -2,37 +2,26 @@
   "name": "postsvg",
   "version": "0.0.3",
   "description": "SVG transformations",
-  "main": "index.js",
-  "scripts": {
-    "test": "node_modules/.bin/mocha test/*.test.js",
-    "test-coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kisenka/postsvg.git"
-  },
-  "keywords": [
-    "svg",
-    "transform"
+  "main": "lib/processor.js",
+  "files": [
+    "lib"
   ],
   "author": "kisenka",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kisenka/postsvg/issues"
-  },
+  "repository": "kisenka/postsvg",
   "homepage": "https://github.com/kisenka/postsvg#readme",
-  "files": [
-    "lib/",
-    "index.js",
-    "README.md"
+  "bugs": "https://github.com/kisenka/postsvg/issues",
+  "keywords": [
+    "svg",
+    "transform",
+    "posthtml"
   ],
   "dependencies": {
-    "cheerio": "0.19.0",
-    "object-assign": "4.0.1"
+    "deepmerge": "^2.0.0",
+    "posthtml": "^0.9.2",
+    "posthtml-parser": "^0.2.1",
+    "posthtml-render": "^1.0.6"
   },
-  "devDependencies": {
-    "chai": "3.4.1",
-    "istanbul": "0.4.2",
-    "mocha": "2.3.4"
-  }
+  "devDependencies": {},
+  "scripts": {}
 }
